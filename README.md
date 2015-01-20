@@ -43,7 +43,7 @@ EmojiEverywhere library for Hangout Emoji View , TextView and EditText
             class="sithagi.com.emojieverywhere.EmojiconsFragment"
             tools:layout="@layout/emojicons" />
     </LinearLayout>
-```xml
+```
 
 
 ![image](https://github.com/chathudan/KitKatEmoji/blob/dev/KitKatEmoji.png)
