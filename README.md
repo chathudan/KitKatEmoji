@@ -4,6 +4,9 @@ KitKatEmoji
 EmojiEverywhere library for Hangout Emoji View , TextView and EditText
 
 
+![image](https://github.com/chathudan/KitKatEmoji/blob/dev/KitKatEmoji.png)
+
+
 ## TextView Example
 
 ```xml
@@ -46,6 +49,5 @@ EmojiEverywhere library for Hangout Emoji View , TextView and EditText
 ```
 
 
-![image](https://github.com/chathudan/KitKatEmoji/blob/dev/KitKatEmoji.png)
 
 
