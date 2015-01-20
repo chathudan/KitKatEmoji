@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/emojis_tab"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/emojis_tab_00_recent"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_emoji_recent_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/emojis_tab_0_people"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_emoji_people_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/emojis_tab_1_nature"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_emoji_nature_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/emojis_tab_2_objects"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_emoji_objects_light" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/emojis_tab_3_cars"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_emoji_places_light" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/emojis_tab_4_punctuation"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_emoji_symbols_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/emojis_backspace"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_vp_delete_s" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_ash_light" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/emojis_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>
