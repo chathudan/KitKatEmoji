@@ -1,5 +1,6 @@
 KitKatEmoji
 ===========
+[![AndroidLibs](https://img.shields.io/badge/AndroidLibs-KitKatEmoji-brightgreen.svg?style=flat)](https://www.android-libs.com/lib/hangoutsemojiview)
 
 EmojiEverywhere library for Hangout Emoji View , TextView and EditText
 
