@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatfragment_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<ListView-->
+            <!--android:id="@+id/list_chat"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:listSelector="@android:color/transparent"-->
+            <!--android:cacheColorHint="@android:color/transparent"-->
+            <!--android:drawSelectorOnTop="false"-->
+            <!--android:fadingEdgeLength="0dp"-->
+            <!--android:fillViewport="false"-->
+            <!--android:longClickable="false"-->
+            <!--android:overScrollMode="never"-->
+            <!--android:paddingBottom="0dp"-->
+            <!--android:stackFromBottom="true"-->
+            <!--android:state_pressed="false"-->
+            <!--android:smoothScrollbar="true"-->
+            <!--android:scrollbars="none"-->
+            <!--android:transcriptMode="alwaysScroll"-->
+            <!--tools:listitem="@layout/voipem_chat_list_raw" />-->
+
+            <com.sithagi.kitkatemoji.EmojiconEditText
+                android:id="@+id/txt_sentMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:background="@android:color/white"
+                android:minHeight="48dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txt_chat_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_vp_chatbulb"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="Typing..."
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:typeface="sans"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:id="@+id/footer_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/footer_layout"
+            layout="@layout/emoji_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_for_emojiicons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/emojicons"
+            class="com.sithagi.kitkatemoji.EmojiconsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:requiresFadingEdge="none"
+            tools:layout="@layout/emojicons" />
+    </LinearLayout>
+
+</LinearLayout>

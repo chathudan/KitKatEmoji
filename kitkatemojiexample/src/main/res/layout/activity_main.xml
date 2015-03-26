@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight=".30"
+
+        android:layout_height="0dp">
+        <com.sithagi.kitkatemoji.EmojiconEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Hello"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txt_message" />
+
+        <com.sithagi.kitkatemoji.EmojiconTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Fuck me"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txt_message_" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer_for_emojiicons"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        <fragment
+            android:id="@+id/emojicons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:requiresFadingEdge="none"
+            class="com.sithagi.kitkatemoji.EmojiconsFragment"
+            tools:layout="@layout/emojicons" />
+    </LinearLayout>
+
+
+</LinearLayout>

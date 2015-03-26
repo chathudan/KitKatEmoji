@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".14">
+
+        <ImageView
+            android:id="@+id/btn_chat_emoji"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_vp_smileys" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".72">
+
+        <com.sithagi.kitkatemoji.EmojiconEditText
+            android:id="@+id/edit_chat_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ems="10"
+            android:hint="Type message here"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="256"
+            android:maxLines="4"
+            android:minHeight="48dp"
+
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".14">
+
+        <ImageView
+            android:id="@+id/btn_chat_send"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_vp_send" />
+    </LinearLayout>
+
+</LinearLayout>
