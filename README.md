@@ -70,3 +70,8 @@ Library for Emoji View like Hangouts, Emoji TextView and Emoji EditText
             tools:layout="@layout/emojicons" />
     </LinearLayout>
 ```
+
+## License
+
+KitKatEmoji is released under the <a href="https://raw.githubusercontent.com/chathudan/KitKatEmoji/dev/README.md">Apache License
+                           Version 2.0</a>.
